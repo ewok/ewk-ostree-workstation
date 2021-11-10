@@ -12,7 +12,7 @@ packages:
   # Portals for Flatpak
   - xdg-desktop-portal
   - xdg-desktop-portal-gtk
-  - xdg-desktop-portal-gnome
+
 # base
   - ansible
   - git
@@ -85,6 +85,8 @@ packages:
   - kanshi
   - lxappearance
   - mako
+  - rofi-wayland
+  - rofi-wayland-themes
   - slurp
   - swappy
   - sway
@@ -96,7 +98,7 @@ packages:
 exclude-packages:
   - firefox-wayland
   - brltty
-  - glibc-all-langpacks
+  # - glibc-all-langpacks
   - xdg-desktop-portal-wlr
   - yelp
   - nano
