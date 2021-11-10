@@ -57,6 +57,7 @@ packages:
   - gammastep
   - gnome-disk-utility
   - gnome-keyring
+  - gnome-keyring-pam
   - google-noto-emoji-color-fonts
   - gvfs-afc
   - gvfs-afp
