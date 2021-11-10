@@ -1,0 +1,112 @@
+include: upstream/fedora-common-ostree.yaml
+
+ref: fedora/34/${basearch}/ewk
+rojig:
+  name: ewk
+  summary: "Fedora ewk image"
+  license: MIT
+
+packages:
+  # XWayland support
+  - xorg-x11-server-Xwayland
+  # Portals for Flatpak
+  - xdg-desktop-portal
+  - xdg-desktop-portal-gtk
+  - xdg-desktop-portal-gnome
+# base
+  - ansible
+  - git
+  - basesystem
+  - selinux-policy-targeted
+# hardware/drivers
+  - acpi
+  - kernel
+  - kernel-modules-extra
+  - lm_sensors
+  - NetworkManager-openvpn-gnome
+  - NetworkManager-tui
+  - NetworkManager-wifi
+  - opensc
+  - powertop
+  - sane-backends
+  - sane-backends-drivers-scanners
+  - tlp
+# cli tools
+  - fzf
+  - nmap-ncat
+  - rclone
+  - restic
+  - sysstat
+  - zsh
+# security
+  - gnupg2
+  - lastpass-cli
+  - openvpn
+  - pcsc-lite
+  - pcsc-lite-ccid
+  - pinentry-gtk
+  - yubikey-manager
+# desktop plumbing/apps
+  - adwaita-gtk2-theme
+  - adwaita-qt5
+  - alsa-plugins-pulseaudio
+  - alsa-utils
+  - blueman
+  - fira-code-fonts
+  - fontawesome-fonts
+  - gammastep
+  - gnome-disk-utility
+  - gnome-keyring
+  - google-noto-emoji-color-fonts
+  - gvfs-afc
+  - gvfs-afp
+  - gvfs-archive
+  - gvfs-fuse
+  - gvfs-goa
+  - gvfs-gphoto2
+  - gvfs-mtp
+  - gvfs-smb
+  - lxpolkit
+  - lxterminal
+  - network-manager-applet
+  - nm-connection-editor
+  - pavucontrol
+  - pcmanfm
+  - pinentry-gnome3
+  - playerctl
+  - pulseaudio-utils
+  - simple-scan
+# sway/wayland desktop
+  - alacritty
+  - brightnessctl
+  - clipman
+  - grim
+  - i3blocks
+  - kanshi
+  - lxappearance
+  - mako
+  - slurp
+  - swappy
+  - sway
+  - swayidle
+  - swaylock
+  - waybar
+  - wl-clipboard
+
+exclude-packages:
+  - firefox-wayland
+  - brltty
+  - glibc-all-langpacks
+  - xdg-desktop-portal-wlr
+  - yelp
+  - nano
+
+add-files:
+  - ["2015-RH-IT-Root-CA.pem", "/etc/pki/ca-trust/source/anchors/2015-RH-IT-Root-CA.pem"]
+
+postprocess-script: ewk-post.sh
+
+repos:
+  - fedora-34
+  - fedora-34-updates
+  - copr:copr.fedorainfracloud.org:alebastr:sway-extras
