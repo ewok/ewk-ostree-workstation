@@ -12,6 +12,7 @@ packages:
   # Portals for Flatpak
   - xdg-desktop-portal
   - xdg-desktop-portal-gtk
+  - xdg-desktop-portal-wlr
 
 # base
   - ansible
@@ -78,7 +79,6 @@ packages:
   - pulseaudio-utils
   - simple-scan
 # sway/wayland desktop
-  - alacritty
   - brightnessctl
   - clipman
   - grim
@@ -97,10 +97,10 @@ packages:
   - wl-clipboard
 
 exclude-packages:
+  - alacritty
   - firefox-wayland
   - brltty
   # - glibc-all-langpacks
-  - xdg-desktop-portal-wlr
   - yelp
   - nano
 

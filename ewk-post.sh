@@ -6,6 +6,7 @@ echo 'kernel.sysrq = 1' > /usr/lib/sysctl.d/90-sysrq.conf
 #
 # power saving
 echo 'blacklist e1000e' > /usr/lib/modprobe.d/blacklist-local.conf
+
 ln -sfn /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 
 ### enable other units
