@@ -103,6 +103,7 @@ exclude-packages:
   # - glibc-all-langpacks
   - yelp
   - nano
+  - wofi
 
 add-files:
   - ["2015-RH-IT-Root-CA.pem", "/etc/pki/ca-trust/source/anchors/2015-RH-IT-Root-CA.pem"]
