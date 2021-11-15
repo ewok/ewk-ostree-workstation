@@ -33,6 +33,7 @@ packages:
   - sane-backends-drivers-scanners
   - tlp
 # cli tools
+  - fish
   - fzf
   - nmap-ncat
   - rclone
