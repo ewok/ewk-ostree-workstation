@@ -2,8 +2,8 @@
 
 set -e
 
-REPO=/volume2/fedora-base/repo
-CACHE=/volume2/fedora-base/cache
+REPO=/volume1/Shared/fedora-base/repo
+CACHE=/volume1/Shared/fedora-base/cache
 
 sudo docker build -t fedora-build .
 
