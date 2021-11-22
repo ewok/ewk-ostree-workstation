@@ -1,23 +1,25 @@
 include: upstream/fedora-common-ostree.yaml
 
-ref: fedora/34/${basearch}/ewk
+ref: fedora/35/${basearch}/ewk
 rojig:
   name: ewk
   summary: "Fedora ewk image"
   license: MIT
 
 packages:
+  # Generic release package for desktop variants
+  - fedora-release
+  - fedora-release-ostree-desktop
   # XWayland support
   - xorg-x11-server-Xwayland
   # Portals for Flatpak
   - xdg-desktop-portal
   - xdg-desktop-portal-gtk
-  - xdg-desktop-portal-wlr
 
 # base
   - ansible
   - git
-  - basesystem
+  # - basesystem
   - selinux-policy-targeted
 # hardware/drivers
   - acpi
@@ -39,7 +41,7 @@ packages:
   - rclone
   - restic
   - sysstat
-  - zsh
+  # - zsh
 # security
   - gnupg2
   - lastpass-cli
@@ -112,6 +114,6 @@ add-files:
 postprocess-script: ewk-post.sh
 
 repos:
-  - fedora-34
-  - fedora-34-updates
+  - fedora-35
+  - fedora-35-updates
   - copr:copr.fedorainfracloud.org:alebastr:sway-extras
