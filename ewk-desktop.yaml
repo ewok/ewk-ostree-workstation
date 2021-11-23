@@ -84,6 +84,9 @@ packages:
   - playerctl
   - pulseaudio-utils
   - simple-scan
+  - vivaldi-stable
+  - gnome-themes-extra
+  - distribution-gpg-keys
 # sway/wayland desktop
   - brightnessctl
   - clipman
@@ -121,3 +124,4 @@ repos:
   - fedora-35
   - fedora-35-updates
   - copr:copr.fedorainfracloud.org:alebastr:sway-extras
+  - vivaldi
