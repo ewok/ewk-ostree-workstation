@@ -2,8 +2,6 @@
 
 set -e
 
-# REPO=/volume1/Shared/fedora-base/repo
-# CACHE=/volume1/Shared/fedora-base/cache
 REPO=.tmp/repo
 CACHE=.tmp/cache
 
@@ -18,3 +16,13 @@ podman run --rm -ti --privileged --security-opt label=disable \
     fedora-build
 
 podman run --rm -ti -p 8000:8000 -v $PWD/.tmp:/serve:z jdkelley/simple-http-server
+
+read -p "Sync?" yn
+case $yn in
+    [Yy]* ) rsync -avz --delete $REPO/ nas-rsync:/volume1/Shared/fedora-base/repo/
+        ;;
+    [Nn]* ) exit 2
+        ;;
+    * ) echo "Please answer [Yy]es or [Nn]o.";;
+esac
+

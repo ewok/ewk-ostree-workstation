@@ -20,7 +20,6 @@ packages:
   - ansible
   - git
   - basesystem
-  - selinux-policy-targeted
   - neovim
 # hardware/drivers
   - acpi
@@ -54,7 +53,7 @@ packages:
   - pcsc-lite
   - pcsc-lite-ccid
   - pinentry-gnome3
-  - pinentry-gtk
+  - selinux-policy-targeted
   - yubikey-manager
 # desktop plumbing/apps
   - adwaita-gtk2-theme
@@ -62,10 +61,10 @@ packages:
   - alsa-plugins-pulseaudio
   - alsa-utils
   - blueman
-  - fira-code-fonts
+  - distribution-gpg-keys
   - fontawesome-fonts
   - gammastep
-  - gnome-disk-utility
+  - gnome-themes-extra
   - google-noto-emoji-color-fonts
   - gvfs-afc
   - gvfs-afp
@@ -77,7 +76,6 @@ packages:
   - gvfs-smb
   - lxpolkit
   - lxterminal
-  - network-manager-applet
   - nm-connection-editor
   - pavucontrol
   - pcmanfm
@@ -85,8 +83,8 @@ packages:
   - pulseaudio-utils
   - simple-scan
   - vivaldi-stable
-  - gnome-themes-extra
-  - distribution-gpg-keys
+  - libappindicator-gtk3
+  - libindicator-gtk3
 # sway/wayland desktop
   - brightnessctl
   - clipman
@@ -109,10 +107,13 @@ exclude-packages:
   - alacritty
   - firefox-wayland
   - brltty
-  - vim
+  - vim-common
+  - vim-enhanced
+  - vim-filesystem
+  - vim-default-editor
+  - dmenu
   # - glibc-all-langpacks
   - yelp
-  - nano
   - wofi
 
 add-files:
