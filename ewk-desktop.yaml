@@ -20,7 +20,6 @@ packages:
   - ansible
   - git
   - basesystem
-  - neovim
 # hardware/drivers
   - acpi
   - alsa-sof-firmware
@@ -107,11 +106,8 @@ exclude-packages:
   - alacritty
   - firefox-wayland
   - brltty
-  - vim-common
-  - vim-enhanced
-  - vim-filesystem
-  - vim-default-editor
   - dmenu
+  - nano
   # - glibc-all-langpacks
   - yelp
   - wofi
