@@ -43,6 +43,7 @@ packages:
   - restic
   - strace
   - sysstat
+  - trash-cli
 # security
   - gnome-keyring
   - gnome-keyring-pam
