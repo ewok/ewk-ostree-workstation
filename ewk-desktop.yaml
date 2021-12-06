@@ -38,6 +38,7 @@ packages:
   - fish
   - fzf
   - htop
+  - neovim
   - nmap-ncat
   - rclone
   - restic
