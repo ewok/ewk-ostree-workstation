@@ -2,6 +2,8 @@
 
 set -e
 
+cd $(dirname $0)
+
 REPO=/volume1/Shared/fedora-base/repo
 CACHE=/volume1/Shared/fedora-base/cache
 

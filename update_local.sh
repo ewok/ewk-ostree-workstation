@@ -2,6 +2,8 @@
 
 set -e
 
+cd $(dirname $0)
+
 REPO=.tmp/repo
 CACHE=.tmp/cache
 
