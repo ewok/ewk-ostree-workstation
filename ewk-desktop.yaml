@@ -83,7 +83,6 @@ packages:
   - playerctl
   - pulseaudio-utils
   - simple-scan
-  - vivaldi-stable
   - libappindicator-gtk3
   - libindicator-gtk3
 # sway/wayland desktop
@@ -123,4 +122,3 @@ repos:
   - fedora-35
   - fedora-35-updates
   - copr:copr.fedorainfracloud.org:alebastr:sway-extras
-  - vivaldi
