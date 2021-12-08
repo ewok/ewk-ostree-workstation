@@ -20,6 +20,7 @@ packages:
   - ansible
   - git
   - basesystem
+  - patch
 # hardware/drivers
   - acpi
   - alsa-sof-firmware
