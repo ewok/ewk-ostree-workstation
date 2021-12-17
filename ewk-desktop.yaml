@@ -40,6 +40,7 @@ packages:
   - fzf
   - htop
   - neovim
+  - net-tools
   - nmap-ncat
   - rclone
   - restic
