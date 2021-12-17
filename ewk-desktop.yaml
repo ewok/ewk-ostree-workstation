@@ -24,6 +24,7 @@ packages:
 # hardware/drivers
   - acpi
   - alsa-sof-firmware
+  - cups
   - kernel
   - kernel-modules-extra
   - lm_sensors
@@ -34,6 +35,7 @@ packages:
   - powertop
   - sane-backends
   - sane-backends-drivers-scanners
+  - system-config-printer
   - tlp
 # cli tools
   - fish
