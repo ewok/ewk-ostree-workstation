@@ -67,6 +67,7 @@ packages:
   - alsa-utils
   - blueman
   - distribution-gpg-keys
+  - emacs
   - fontawesome-fonts
   - gammastep
   - gnome-themes-extra
@@ -79,6 +80,8 @@ packages:
   - gvfs-gphoto2
   - gvfs-mtp
   - gvfs-smb
+  - libappindicator-gtk3
+  - libindicator-gtk3
   - lxpolkit
   - lxterminal
   - nm-connection-editor
@@ -87,8 +90,6 @@ packages:
   - playerctl
   - pulseaudio-utils
   - simple-scan
-  - libappindicator-gtk3
-  - libindicator-gtk3
 # sway/wayland desktop
   - brightnessctl
   - clipman
