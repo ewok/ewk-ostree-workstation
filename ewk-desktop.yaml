@@ -38,6 +38,9 @@ packages:
   - system-config-printer
   - tlp
 # cli tools
+  - bat
+  - exa
+  - fd-find
   - fish
   - fzf
   - htop
@@ -46,6 +49,7 @@ packages:
   - nmap-ncat
   - rclone
   - restic
+  - ripgrep
   - strace
   - sysstat
   - trash-cli
