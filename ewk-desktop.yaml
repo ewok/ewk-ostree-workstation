@@ -71,6 +71,7 @@ packages:
   - alsa-utils
   - blueman
   - distribution-gpg-keys
+  - emacs
   - fontawesome-fonts
   - gammastep
   - gnome-themes-extra
