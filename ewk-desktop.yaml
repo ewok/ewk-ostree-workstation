@@ -132,3 +132,4 @@ repos:
   - fedora-35
   - fedora-35-updates
   - copr:copr.fedorainfracloud.org:alebastr:sway-extras
+  - copr:copr.fedorainfracloud.org:deathwish:emacs-pgtk-nativecomp

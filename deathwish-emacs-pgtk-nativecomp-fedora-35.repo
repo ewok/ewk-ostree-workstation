@@ -1,0 +1,10 @@
+[copr:copr.fedorainfracloud.org:deathwish:emacs-pgtk-nativecomp]
+name=Copr repo for emacs-pgtk-nativecomp owned by deathwish
+baseurl=https://download.copr.fedorainfracloud.org/results/deathwish/emacs-pgtk-nativecomp/fedora-35-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://download.copr.fedorainfracloud.org/results/deathwish/emacs-pgtk-nativecomp/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1

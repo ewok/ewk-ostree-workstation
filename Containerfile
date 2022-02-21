@@ -7,6 +7,7 @@ WORKDIR /mnt/worktree
 
 COPY compose.sh ewk-desktop.yaml ewk-post.sh \
   alebastr-sway-extras-fedora-35.repo \
+  deathwish-emacs-pgtk-nativecomp-fedora-35.repo \
   2015-RH-IT-Root-CA.pem \
   /mnt/worktree/
 
